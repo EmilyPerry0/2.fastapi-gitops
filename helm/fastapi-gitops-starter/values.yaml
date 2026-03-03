@@ -96,10 +96,10 @@ readinessProbe:
   failureThreshold: 3
 
 autoscaling:
-  enabled: false
+  enabled: true
   minReplicas: 2
   maxReplicas: 10
-  targetCPUUtilizationPercentage: 80
+  targetCPUUtilizationPercentage: 10
   targetMemoryUtilizationPercentage: 80
 
 # Additional volumes on the output Deployment definition.
